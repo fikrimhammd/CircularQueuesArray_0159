@@ -59,12 +59,15 @@ public:
 			if (FRONT == max - 1)
 				FRONT = 0;
 			else
-				FRONT == FRONT + 1;
+				FRONT = FRONT + 1;
 		}
-
-
-
-
 	}
-};
+
+	void display() {
+
+		//cek apakah antrian kosong
+		if (FRONT == -1) {
+			cout << "Queue is empty\n";
+			return; 
+		}
 
